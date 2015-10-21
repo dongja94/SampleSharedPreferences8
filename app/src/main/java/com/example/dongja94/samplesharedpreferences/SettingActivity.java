@@ -26,7 +26,7 @@ public class SettingActivity extends AppCompatActivity {
         });
 
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction().add(R.id.container, new SettingFragment()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new SettingFragment()).commit();
         }
     }
 
