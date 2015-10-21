@@ -44,5 +44,9 @@ public class PropertyManager {
         return mPrefs.getString(KEY_PASSWORD, "");
     }
 
+    public boolean isBackupSync() {
+        return mPrefs.getBoolean("perf_sync", false);
+    }
+
 
 }
